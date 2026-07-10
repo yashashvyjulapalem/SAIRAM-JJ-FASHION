@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart - SAIRAM JJ FASHION</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1>🛒 Your Shopping Cart</h1>
+
+<div id="cartItems">
+    <p>No items added yet.</p>
+</div>
+
+<h2 id="totalPrice">Total: ₹0</h2>
+
+<a href="../index.html">
+    <button>Continue Shopping</button>
+</a>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let cartDiv = document.getElementById("cartItems");
+let totalPrice = document.getElementById("totalPrice");
+
+let prices = {
+    "Silk Saree": 1999,
+    "Cotton Saree": 999,
+    "Designer Saree": 2499,
+    "Party Wear Saree": 2999,
+    "Women's Kurti": 799,
+    "Women's Dress": 1499,
+    "Leather Handbag": 1299,
+    "Sling Bag": 899
+};
+
+let total = 0;
+
+if (cart.length > 0) {
+
+    cartDiv.innerHTML = "";
+
+    cart.forEach(function(item) {
+
+        cartDiv.innerHTML += "<p>" + item + " - ₹" + prices[item] + "</p>";
+
+        total += prices[item];
+    });
+
+    totalPrice.innerHTML = "Total: ₹" + total;
+}
+</script>
+
+</body>
+</html>
