@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SAIRAM JJ FASHION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>SAIRAM JJ FASHION</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pages/products.html">Products</a>
+        <a href="pages/login.html">Login</a>
+        <a href="pages/register.html">Register</a>
+        <a href="pages/cart.html">🛒 Cart (<span id="cartCount">0</span>)</a>
+        <a href="pages/contact.html">Contact</a>
+    </nav>
+
+    <div class="search-box">
+        <input type="text" id="searchBox" placeholder="Search for Sarees...">
+        <button onclick="searchProduct()">Search</button>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>🎉 GRAND OPENING SALE 🎉</h2>
+    <p>Flat 50% OFF on Women's Fashion</p>
+    <button onclick="shopNow()">Shop Now</button>
+</section>
+<section class="featured">
+
+    <h2>Featured Categories</h2>
+
+    <div class="category-box">
+        🌸 Sarees
+    </div>
+
+    <div class="category-box">
+        👗 Kurtis
+    </div>
+
+    <div class="category-box">
+        ✨ Dresses
+    </div>
+
+    <div class="category-box">
+        👜 Handbags
+    </div>
+
+</section>
+
+<section class="categories">
+    <h2>Shop by Category</h2>
+
+    <div class="category-box">
+        <a href="pages/sarees.html">🌸 Sarees</a>
+    </div>
+
+    <div class="category-box">
+        <a href="pages/kurtis.html">👗 Kurtis</a>
+    </div>
+
+    <div class="category-box">
+        <a href="pages/dresses.html">✨ Dresses</a>
+    </div>
+
+    <div class="category-box">
+        <a href="pages/handbags.html">👜 Handbags</a>
+    </div>
+</section>
+
+<section class="products">
+
+    <h2>Our Collection</h2>
+
+    <div class="product-card">
+        <img src="images/saree1.webp" alt="Silk Saree">
+        <h3>Silk Saree</h3>
+        <p>₹1999</p>
+        <p>⭐⭐⭐⭐⭐ (4.9)</p>
+        <button onclick="addToCart('Silk Saree')">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/saree2.webp" alt="Cotton Saree">
+        <h3>Cotton Saree</h3>
+        <p>₹999</p>
+        <p>⭐⭐⭐⭐☆ (4.7)</p>
+        <button onclick="addToCart('Cotton Saree')">Add to Cart</button>
+    
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 SAIRAM JJ FASHION | All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
